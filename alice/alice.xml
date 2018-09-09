@@ -6,18 +6,10 @@
     </sample>
 
     <input pattern="* (привет*|здравствуй*) *">
-        <output if="full($UserName)">
-            <item value="Привет, $UserName! Рада снова видеть тебя!"/>
-            <item value="Здравствуй, $UserName! Я уже успела соскучиться..."/>
+        <output>
+            <item value="Привет! Я так рада видеть Вас!"/>
+            <item value="Здравствуйте! Как у Вас дела? "/>
         </output>
-
-        <context if="empty($UserName)" id="name">
-            <output value="Привет! Меня зовут Алиса! А это - демонстрация моего навыка, созданного с помощью платформы zenbot. Как тебя зовут?"/>
-
-            <input pattern="$Text">
-                <var name="UserName" value="cap($Text)" scope="user"/>
-                <output value="Приятно познакомиться, $UserName! Напиши мне что-нибудь."/>
-                <context/>
             </input>
         </context>
     </input>
