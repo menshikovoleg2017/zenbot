@@ -1,23 +1,5 @@
 <context>
-
-    <sample>
-        <item value="Кто такая Алиса"/>
-        <item value="Что такое бот"/>
-    </sample>
-
-    <input pattern="* (привет*|здравствуй*) *">
-        <output>
-            <item value="Привет! Я так рада видеть Вас!"/>
-            <item value="Здравствуйте! Как у Вас дела? "/>
-        </output>
-            </input>
-        
-
-    <input pattern="* пока *">
-        <var name="end_session" value="javascript: true"/>
-        <output value="Ну пока!"/>
-        <output value="Пока-пока"/>
-    </input>
-
-    
-        </context>
+  <input pattern="* привет* *">
+    <output value="Ну првиет"/>
+  </input>
+</context>
