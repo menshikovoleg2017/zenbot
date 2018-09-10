@@ -11,8 +11,7 @@
             <item value="Здравствуйте! Как у Вас дела? "/>
         </output>
             </input>
-        </context>
-    </input>
+        
 
     <input pattern="* пока *">
         <var name="end_session" value="javascript: true"/>
@@ -22,8 +21,3 @@
 
     
         </context>
-
-
-    </input>
-
-</context>
